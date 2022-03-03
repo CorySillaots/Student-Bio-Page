@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+}
+header {
+  padding: 30px 43px;
+  background-color: grey;
+}
+.boxed {
+}
+header h1 {
+  font-weight: bold;
+  font-size: 36px;
+  color: white;
+  margin: 0;
+  display: inline;
+}
+header a {
+  text-decoration: none;
+  color: white;
+}
+header nav {
+  float: right;
+  margin: 7px 0;
+}
+header nav ul li {
+  display: inline;
+}
+header nav ul li a {
+  margin: 0 30px;
+  font-weight: lighter;
+  font-size: 22px;
+}
+footer {
+  background: grey;
+  width: 100%;
+  padding: 20px 16px;
+}
+footer h2 {
+  display: inline;
+  color: white;
+  font-size: 30px;
+  margin: 0;
+}
+footer nav {
+  float: right;
+  margin: 7px 0;
+}
+footer nav ul li {
+  display: inline;
+}
+footer nav ul li a {
+  margin: 0 30px;
+  font-weight: lighter;
+  font-size: 22px;
+  color: white;
+}
+section {
+  padding: 60px;
+}
+.hero {
+    background-image: url("../images/banner.jpeg");
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.intro {
+  text-align: left;
+}
+.intro p {
+  text-align: right;
+}
+
+.work img{
+  height: 260px;
+  width: 300px;
+}
+
+.work-1 img {
+  height: 450px;
+  width: 900px;
+}

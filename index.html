@@ -5,111 +5,127 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cory Sillaots</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <!--Navigation Begins-->
-   <header>
-    <h1 class="header">
-        <a href="/">Cory Sillaots</a>
+  <!-- navigation tags -->
+  <header>
+    <h1>
+      <div class="boxed">
+        <a href="">Cory Sillaots</a>
+      </div>
     </h1>
     <nav>
-        <ul>
-            <li>
-                <a href="#about-me">About Me</a>
-            </li>
-            <li>
-                <a href="#work">Work</a>
-            </li>
-            <li>
-                <a href="contact-me">Contact Me</a>
-            </li>
-            <li>
-                <a href="resume">Resume</a>
-            </li>
-        </ul>
-    </nav> 
-   </header>
-<!--Navigation ends-->
-
-<!--Hero/jumbotron-->
-<section class="hero">
-    <img src="./assets/images/cory.jpeg" alt="Cory Sillaots">
-    <h2>Becoming a Developer!</h2>
-
-<!--About me section-->
-<section id="about-me" class="intro">
+      <ul>
+        <li>
+          <a href="#about-me">About Me</a>
+        </li>
+        <li>
+          <a href="#my-work">Work</a>
+        </li>
+        <li>
+          <a href="#contact-me">Contact Me</a>
+        </li>
+        <li>
+          <a href="#resume">Resume</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- end navigation -->
+ 
+  <!-- hero jumbotron -->
+  <section class="hero">
+    <h2>Welcome To My Portfolio!</h2>
+  </section>
+  <!-- end header -->
+ 
+  <!-- about me section -->
+  <section id="about-me" class="intro">
+    <h2 class="section-title primary-border">About Me</h2>
+      <p>
+        With a background in Digital Design, Music Production & Performance and Team Management, I am now focused on culminating all of my experience into logical and creative web development.
+    </p>
+    <p>
+        As a learner currently enrolled in the University of Toronto SCS Coding Boot Camp, I plan on building the necassary skills and understanding of industry standard coding software and languages to use this page as a professional portfolio.
+    </p>
+  </section>
+  <!-- end about me section -->
+ 
+  <!-- work section -->
+  <section id="my-work">
     <div class="flex-row">
-        <h2 class="section-title">
-        About Me
-    </h2>
+      <h2 class="section-title primary-border">
+        Work
+      </h2>
     </div>
-    <div class="flex-row">
-        <p>
-            With a background in Digital Design, Music Production & Performance and Team Management, I am now focused on culminating all of my experience into logical and creative web development.
-        </p>
-        <br />
-        <p>
-            As a learner currently enrolled in the University of Toronto SCS Coding Boot Camp, I plan on building the necassary skills and understanding of industry standard coding software and languages to use this page as a professional portfolio.
-        </p>
+    <div class="work">
+      <article class="work-1">
+        <img src="./assets/images/surfbw.jpeg" alt="A surfer riding a wave">
+        <div class="work-name">
+          <h3 class="surf-report">Surf Report</h3>
+          <p>MERN stack: Coming soon</p>
+        </div>
+      </article>
+      <article class="work-2">
+        <img src="./assets/images/nodebw.jpeg" alt="A computer node">
+        <div class="work-name">
+          <h3 class="led-wall">LED Wall</h3>
+          <p>Node/Iot: Coming Soon</p>
+        </div>
+      </article>
+      <article class="work-3">
+        <img src="./assets/images/calculatorbw.jpeg" alt="HTML, CSS and JavaScript Logos">
+        <div class="work-name">
+          <h3 class="calculator">Calculator</h3>
+          <p>React/Javascript: Coming Soon</p>
+        </div>
+      </article>
+      <article class="work-4">
+        <img src="./assets/images/puzzelbw.jpeg" alt="An almost complete puzzel">
+        <div class="work-name">
+          <h3 class="pastel-puzzles">Pastel Puzzels</h3>
+          <p>MERN stack: Coming Soon</p>
+        </div>
+      </article>
+      <article class="work-5">
+       <a href="https://corysillaots.github.io/run-buddy/">
+        <img src="./assets/images/hero-bgbw.jpeg" alt="A runner tying up their shoe">
+        <div class="work-name">
+          <h3 class="calculator">Run Buddy</h3>
+        </a>
+          <p>HTML/CSS</p>
+        </div>
+      </article>
     </div>
-</section>
-</section>
-<!--End About Me section-->
-
-<!--Work Section-->
-<section class="work-section">
-    <article class="work">
-        <img src="./assets/images/github.png" alt="Git Hub logo"> 
-        <a href="https://github.com/CorySillaots">
-        <div class="work">
-            <h3 class="project-name">GitHub</h3>
-            <h4 class="project-software">Project Management</h4>
-        </div>
-    </article>
-    <article class="work">
-        <img src="./assets/images/hero-bg.jpeg" alt="A runner tying up their shoe"> 
-        <a href="https://corysillaots.github.io/run-buddy/">
-        <div class="work">
-            <h3 class="project-name">Run Buddy</h3>
-            <h4 class="project-software">HTML & CSS</h4>
-        </div>
-    </article>
-    <article class="work">
-        <img src="./assets/images/calculator.png" alt="The HTML 5, JavaScript and CSS logo"> 
-        <a href="">
-        <div class="work">
-            <h3 class="project-name">Calculator (coming soon)</h3>
-            <h4 class="project-software">React/JavaScript/CSS</h4>
-        </div>
-    </article>
-    <article class="work">
-        <img src="./assets/images/node.jpeg" alt="A computer node">
-        <a href="">
-        <div class="work">
-            <h3 class="project-name">LED Wall (coming soon)</h3>
-            <h4 class="project-software">Node/IoT</h4>
-        </div>
-    </article>
-    <article class="work">
-        <img src="./assets/images/puzzel.jpeg" alt="An almost finished puzzle">
-        <a href="">
-        <div class="work">
-            <h3 class="project-name">Pastel Puzzels (coming soon)</h3>
-            <h4 class="project-software">Mern Stack</h4>
-        </div>
-    </article>
-</section>
-<!--End Work Section-->
-
-<!--Footer-->
-<h2 class="header">Contact Me</h2>
-    <ul>
-        <li id="telephone"><strong>Telephone:</strong> <a href="tel:+19054490942">(905) 449-0942</a>></li>
-        <li id="email"><strong>Email:</strong> <a href="mailto:csillaots@gmail.com">csillaots@gmail.com</a></li>
-        <li id="github"><strong>GitHub:</strong> <a href="https://github.com/CorySillaots">Cory Sillaots</a></li>
-        <li id="instagram"><strong>Instagram:</strong> <a href="https://www.instagram.com/corysillaots">Cory Sillaots</a></li>
-        <li id="facebook"><strong>FaceBook:</strong> <a href="https://www.facebook.com/cory.sillaots">Cory Sillaots</a></li>    
-    </ul>
-<h3>Made by Cory Sillaots.</h3>
+  </section>
+  <!-- work section end -->
+  
+  <!-- footer -->
+  <footer>
+    <h2>Contact Me</h2>
+    <class id="contact-me">
+    <nav>
+      <ul>
+        <li>
+           <a href="tel:+19054490942">Phone</a>
+        </li>
+        <li>
+          <a href="mailto:csillaots@gmail.com">csillaots@gmail.com</a>
+        </li>
+        <li>
+          <a href="https://github.com/CorySillaots">GitHub</a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/corysillaots">Instagram</a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/cory.sillaots">FaceBook</a>
+        </li>
+      </ul>
+    </nav>
+    </class>
+  </footer>
+  <!-- footer end-->
 </body>
 </html>
