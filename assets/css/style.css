@@ -9,10 +9,16 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 header {
-  padding: 30px 43px;
+  padding: 20px 43px;
   background-color: grey;
 }
-.boxed {
+header div.boxed a{
+  background: black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  padding-left:3rem;
+  margin-left:-2.5rem;
 }
 header h1 {
   font-weight: bold;
@@ -27,15 +33,16 @@ header a {
 }
 header nav {
   float: right;
-  margin: 7px 0;
+  margin: -30px 0;
 }
 header nav ul li {
   display: inline;
 }
 header nav ul li a {
-  margin: 0 30px;
+  margin: 30px;
   font-weight: lighter;
   font-size: 22px;
+  text-decoration: underline;
 }
 footer {
   background: grey;
@@ -71,19 +78,101 @@ section {
     background-position: center;
     position: relative;
 }
-.intro {
-  text-align: left;
+
+.hero h2{
+  font-size: 30px;
+  float: right;
+  margin-top: 25rem;
+  background-color: black;
+}
+
+.intro{
+ display: inline-flex;
+ float: right;
+}
+.intro h2{
+  font-size: 50px;
+  padding: 15px;
+  border-right: 3px solid white;
 }
 .intro p {
-  text-align: right;
+  text-align: left;
+  padding-left: 3rem;
+}
+
+.work h2{
+  font-size: 50px;
 }
 
 .work img{
-  height: 260px;
-  width: 300px;
+  height: 340px;
+  width: 410px;
+}
+
+.work-1{
+  position: relative;
+  text-align: left;
+  color: white;
+  float: right;
+  padding-right:340px;
+}
+
+.work-name-1{
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
 }
 
 .work-1 img {
   height: 450px;
   width: 900px;
 }
+
+.work-2, .work-3 {
+  position: relative;
+  text-align: left;
+  color: white;
+  float: left;
+  padding: 40px;
+}
+
+.work-4, .work-5{
+  position: relative;
+  text-align: left;
+  color: white;
+  float: right;
+  padding: 40px;
+
+}
+
+.work-name-2, .work-name-3, .work-name-4, .work-name-5{
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  padding: 40px;
+}
+
+.work img:hover{
+  transform: scale(1.25);
+}
+
+.row{
+  display: inline-block;
+}
+
+.section-title{
+  float: left;
+  border-right: 3px solid white;
+  padding-right: 50px;
+  padding-bottom: 1200px;
+}
+
+.squares{
+  padding-left: 280px;
+}
+
+.my.work{
+  border-left: 3px white;
+  
+}
+
