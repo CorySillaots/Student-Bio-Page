@@ -1,203 +1,247 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
+
 body {
-  background-color: black;
-  color: white;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Arial;
+  margin: 0;
 }
+
+
 header {
-  padding: 20px 43px;
-  background-color: grey;
-}
-header div.boxed span{
+  padding: 40px;
+  text-align: left;
   background: black;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-right: 1rem;
-  padding-left:3rem;
-  margin-left:-2.5rem;
-}
-header h1 {
-  font-weight: bold;
-  font-size: 36px;
-  color: white;
-  margin: 0;
-  display: inline;
-}
-header a {
-  text-decoration: none;
-  color: white;
-}
-header nav {
-  float: right;
-  margin: -30px 0;
-}
-header nav ul li {
-  display: inline;
-}
-header nav ul li a {
-  margin: 30px;
-  font-weight: lighter;
-  font-size: 22px;
-  text-decoration: underline;
-}
-footer {
-  background: grey;
-  width: 100%;
-  padding: 20px 16px;
-}
-footer h2 {
-  display: inline;
-  color: white;
-  font-size: 30px;
-  margin: 0;
-}
-footer nav {
-  float: right;
-  margin: 7px 0;
-}
-footer nav ul li {
-  display: inline;
-}
-footer nav ul li a {
-  margin: 0 30px;
-  font-weight: lighter;
-  font-size: 22px;
-  color: white;
-}
-section {
-  padding: 60px;
-}
-.hero {
-    background-image: url("../images/banner.jpeg");
-    height: 600px;
-    background-size: cover;
-    background-position: center;
-    position: relative;
+  color: #fff;
 }
 
-.hero img{
-  width: 240px;
-  height: 350px;
-  border: 5px  solid black;
-  margin-top: 95px;
-}
-
-.hero h2{
-  font-size: 30px;
-  float: right;
-  margin-top: 25rem;
-  background-color: black;
-}
-
-.intro{
- display: inline-flex;
- float: right;
-}
-.intro h2{
-  font-size: 50px;
-  padding: 15px;
-  border-right: 3px solid white;
-}
-.intro p {
-  text-align: left;
-  padding-left: 3rem;
-}
-
-.work h2{
-  font-size: 50px;
-}
-
-.work img{
-  height: 340px;
-  width: 410px;
-}
-
-.work-1{
-  position: relative;
-  text-align: left;
-  color: white;
-  float: right;
-  padding-right:340px;
-}
-
-.work-name-1{
-  position: absolute;
-  bottom: 8px;
-  left: 16px;
-  background: 5px black;
-}
-
-.work-1 img {
-  height: 450px;
-  width: 900px;
-}
-
-.work-2, .work-3 {
-  position: relative;
-  text-align: left;
-  color: white;
-  float: left;
-  padding: 40px;
-}
-
-.work-4, .work-5{
-  position: relative;
-  text-align: left;
-  color: white;
-  float: right;
-  padding: 40px;
-
-}
-
-.work-name-2, .work-name-3, .work-name-4, .work-name-5{
-  position: absolute;
-  bottom: 50px;
-  background:black
-}
-
-.work img:hover{
-  transform: scale(1.25);
-}
-
-.row{
-  display: inline-block;
+header span{
+    background-color: grey;
 }
 
 .section-title{
-  float: left;
-  border-right: 3px solid white;
-  padding-right: 50px;
-  padding-bottom: 1200px;
+    font-size: 50px;
+    padding-right: 1rem;
 }
 
-.squares{
-  padding-left: 280px;
+/* 
+What happens when we set the display property to flex?
+The flex container becomes flexible 
+*/
+nav {
+  display: flex;
+  flex-wrap:flex;
+  text-align:center;
+  justify-content:space-between;
+  align-items:center;
 }
 
-.my.work{
-  border-left: 3px white;
+nav .nav-links{
+  display:flex;
+}
+
+nav .title{
+  text-decoration:none;
+  font-size:2.5rem;
+  padding: 5px 10px 5px 0;
+}
+
+nav a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: underline;
+  display:block;
+  padding:15px 15px;
+
+}
+
+
+
+nav a:hover{
+  text-decoration: none;
+  transform: scale(1.25);
+}
+
+.about{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px;
+  padding-bottom: 5px;
   
 }
-.squares, .images{
-  flex: 6;
+
+.section-content{
+    padding: 3rem;
+    border-left: 5px solid black;
+}
+.work{
+  justify-content:space-between;
+  align-items:top;
+  margin-top:0;
 }
 
-a {
-  text-decoration: underline !important;
-  text-decoration-color: #FFFFFF !important;
-  color: #FFFFFF;
 
+/* 
+What is the flex-wrap property?
+It specifies whether the flex items should wrap or not 
+*/
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main img{
+    height: 350px;
+    
+}
+
+aside {
+  flex: 1;
+  background-color: #b9c6ae;
+  padding: 80px;
+  text-align: center;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: black;
+  color: #fff;
+}
+.hero {
+  background-image: url("../images/banner.jpeg");
+  height: 600px;
+  width: 100%;
+  background-size: auto;
+  background-position: center;
+  border: 3px solid gray;
+}
+
+.hero h2{
+    float: right;
+    margin-top: 30%;
+    margin-right: 5%;
+    background-color: grey;
+}
+
+.hero img{
+    border: 5px solid gray
+}
+
+.work-title{
+  font-size: 50px;
+  text-align:center;
+  text-decoration: underline;
 }
 
 
+
+.mainProject{
+  flex: 4;
+  display:flex;
+  flex-wrap: wrap;
+  align-items:center;
+  justify-content:center;
+}
+
+.projects {
+  flex: 4;
+  background-color: #fff;
+  padding-left: 6rem;
+  padding-right: 6.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items:top;
+}
+
+
+
+
+.images{
+  padding-left:5rem;
+}
+
+.mainProject{
+    flex: 4;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:top;
+}
+
+.mainProject:hover{
+    transform: scale(1.10);
+}
+
+.card {
+  padding: 10px;
+  flex: 0 0 600px;
+  position: relative;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+.card p {
+  text-align: left;
+}
+
+.card img {
+  width: 100%;
+}
+
+.mainCard {
+  padding: 10px;
+  flex: 0 0 1300px;
+  position: relative;
+}
+.mainCard a {
+  text-decoration:none;
+  color: black;
+}
+.mainCard p {
+  text-align: left;
+  font-size: 1rem;;
+}
+
+.mainCard img {
+  width: 100%;
+}
+
+.text {
+  position: absolute;
+  bottom: 2rem;
+  left: 1rem;
+  background: white;
+  padding-left: 6%;
+}
+
+.mainText {
+  
+  position: relative;
+  bottom: 9rem;
+  left: 2rem;
+  background: white;
+  padding-left: 6%;
+  max-width: 15rem;
+  font-size: 1.5rem;
+}
+
+/* 
+What does the flex-direction property define?
+It defines in which direction the container wants to stack the flex items
+What is it doing here? 
+We are telling the main body and navbar to stack vertically in a column
+*/
 @media screen and (max-width: 768px) {
   main,
   nav {
     flex-direction: column;
   }
+  .mainText {
+    left: 25rem;
+  }
 }
-
