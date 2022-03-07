@@ -20,7 +20,9 @@ Open your coding software, select "open file" and locate the module-1-challenge 
 - Links must scroll to corresponding sections. 
 - Application should get larger when mouse icon hovers over them.
 - Applications that are available should bring user to appropriate live URL of the application.
-- The website must be respnsize and adaptable for different screen sizes.
+- The website must be responsize and adaptable for different screen sizes.
+
+
 
 ## Collaborators and References
 - Brennen Merrett
