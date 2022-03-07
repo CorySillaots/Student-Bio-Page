@@ -12,7 +12,7 @@ header {
   padding: 20px 43px;
   background-color: grey;
 }
-header div.boxed a{
+header div.boxed span{
   background: black;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -79,6 +79,13 @@ section {
     position: relative;
 }
 
+.hero img{
+  width: 240px;
+  height: 350px;
+  border: 5px  solid black;
+  margin-top: 95px;
+}
+
 .hero h2{
   font-size: 30px;
   float: right;
@@ -121,6 +128,7 @@ section {
   position: absolute;
   bottom: 8px;
   left: 16px;
+  background: 5px black;
 }
 
 .work-1 img {
@@ -147,9 +155,8 @@ section {
 
 .work-name-2, .work-name-3, .work-name-4, .work-name-5{
   position: absolute;
-  bottom: 8px;
-  left: 16px;
-  padding: 40px;
+  bottom: 50px;
+  background:black
 }
 
 .work img:hover{
@@ -174,5 +181,23 @@ section {
 .my.work{
   border-left: 3px white;
   
+}
+.squares, .images{
+  flex: 6;
+}
+
+a {
+  text-decoration: underline !important;
+  text-decoration-color: #FFFFFF !important;
+  color: #FFFFFF;
+
+}
+
+
+@media screen and (max-width: 768px) {
+  main,
+  nav {
+    flex-direction: column;
+  }
 }
 
