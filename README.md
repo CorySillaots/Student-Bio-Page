@@ -1,6 +1,8 @@
 ## Personal Biography Challenge (Module 2)
 The purpose of this challenge was to start creating an online portfolio for potential employers to view.
 
+Active URL: [CorySillaotsBioPage](https://corysillaots.github.io/Student-Bio-Page/)
+
 ## Installation:
 In order to access the files needed to complete the challenge see: https://github.com/CorySillaots/module-2-challenge and clone either the following HTTPS link or SSH key:
 HTTPS Link: https://github.com/CorySillaots/module-2-challenge.git
@@ -21,6 +23,11 @@ Open your coding software, select "open file" and locate the module-1-challenge 
 - Application should get larger when mouse icon hovers over them.
 - Applications that are available should bring user to appropriate live URL of the application.
 - The website must be responsize and adaptable for different screen sizes.
+
+![image](./assets/images/studentbiomockup1.png)
+![image](./assets/images/studentbiomockup2.png)
+![image](./assets/images/studentbiomockup3.png)
+
 
 
 
